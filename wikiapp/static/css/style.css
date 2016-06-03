@@ -1,0 +1,10 @@
+body{
+    font-family: 'Slabo 27px', serif;
+}
+#start, #current, #goal, #game_results{
+    font-size: 23px;
+}
+#results {
+    font-size: 20px;
+    padding-left: 30px;
+}
