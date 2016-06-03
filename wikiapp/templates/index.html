@@ -1,0 +1,37 @@
+{% load staticfiles %}
+<!DOCTYPE html>
+<html>
+<head>
+    <script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
+    <script type='text/javascript' src="{% static 'js/wikicrawler.js' %}"></script>
+</head>
+<body>
+    <div id="start">
+        <form>
+            <fieldset>
+                <label for="starting-page">Starting page: </label>
+                <input type="text" id="starting-page">
+                <label for="difficulty-select">Difficulty: </label>
+                <select id="difficulty-select">
+                    <option value="Easy">Easy</option>
+                    <option value="Medium">Medium</option>
+                    <option value="Hard">Hard</option>
+                </select>
+                <button type="submit" id="submit"> Submit </button>
+            </fieldset>
+        </form>
+
+    </div>
+    <div id="game" style="display: none;">
+        <p id="current"> </p>
+        <p id="goal"> </p>
+        <div id="results"> </div>
+        <div id="im-hidden" style="display: none;">You can't see this</div>
+    </div>
+    <div id="game_results" style="display: none;">
+        <p id="path"> </p>
+        <p id="message"> Good Job! </p>
+        <button type="button" id="play_again"> Play Again? </button>
+    </div>
+</body>
+</html>
