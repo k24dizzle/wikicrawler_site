@@ -1,7 +1,5 @@
 import requests
 import bs4
-from urllib import unquote
-
 
 baseUrl = 'https://en.wikipedia.org/wiki/'
 badLinks = (':', 'wikipedia', 'Wikipedia', 'wikimedia', 'Main_Page', 'wikisource', 'wiktionary')
