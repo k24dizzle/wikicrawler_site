@@ -77,6 +77,7 @@ WikiGame.prototype.onWin = function() {
 
 function get_click_func(name) {
     return function(e) {
+        $("#results").empty()
         game.visitPage(name);
         e.preventDefault();
     }
