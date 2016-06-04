@@ -71,7 +71,13 @@ WikiGame.prototype.render_list = function() {
 
 WikiGame.prototype.onWin = function() {
     $("#game_results").show();
-    $('#path').html("Path: " + this.path);
+    if (game.path.length > 0) {
+        $('#path').append('START: ' + this.path[0]);
+    }
+    for (var i = 1; i < game.path.length; i++) {
+        var newElement = $('<div id="path">' + i + ": " + this.path[i] + '</div>');
+        $('#path').append(newElement);
+    }
     $("#game").hide();
 }
 
@@ -116,7 +122,7 @@ $(document).ready(function() {
     $("#play_again").click(function() {
         $('#start').show();
         $('#game_results').hide();
-
+        $('#path').empty();
 
 
     });
