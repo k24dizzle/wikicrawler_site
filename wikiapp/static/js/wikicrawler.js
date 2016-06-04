@@ -93,7 +93,7 @@ function get_click_func(name) {
 var difficulties = {
     Easy: ['Rome', 'World War II', 'Adolf Hitler'],
     Medium: ['Barack Obama', 'Fiji'],
-    Hard: ['Andrei Toader'],
+    Hard: ['NBA', 'Kareem Abdul Jabbar'],
 };
 
 $(document).ready(function() {
